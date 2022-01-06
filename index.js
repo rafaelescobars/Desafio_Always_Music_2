@@ -25,6 +25,7 @@ const pool = new Pool(config)
 
 const generarQuery = (name, text, values) => {
   return {
+    rowMode: 'array',
     name,
     text,
     values
